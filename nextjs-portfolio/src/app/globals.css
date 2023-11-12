@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.navbar{
+    position: relative;
+}
+.navbar a{
+    position: relative;
+    overflow: hidden;
+}
+.navbar span{
+    position: absolute;
+    background: black;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: all ease 1s;
+
+}
+.navbar a.active span{
+    width: 100%;
+}
