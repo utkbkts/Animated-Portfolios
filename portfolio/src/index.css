@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply bg-primary text-white scroll-smooth
+    }
+    .link {
+      @apply cursor-pointer text-black hover:text-gray-400 transition duration-300 text-[15px] md:text-xl;
+    }
+    .input-area{
+      @apply border-b-gray-400 border-b  py-2 px-4 outline-none text-white resize-none bg-transparent w-full
+    }
+    .h1 {
+      @apply text-[54px] lg:text-[108px] font-primary font-bold capitalize leading-[120%] tracking-[-0.05em] mb-2;
+    }
+    .btn {
+      @apply py-[12px] px-[50px] h-[46px] flex items-center justify-center text-base uppercase font-semibold bg-orange-500 text-white rounded-md;
+    }
+    .message-btn{
+      @apply text-red-500 uppercase hover:text-red-300 transition-all duration-300 font-light text-[18px]
+      
+    }
+  }
+
+  .shadows{
+    filter: drop-shadow(20px 7px 5px green);
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  
+  .navbar-wrapper{
+    position: fixed;
+    bottom: 0;
+    right: 35%;
+    z-index: 999;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+  .link.active{
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  /* MEDİA */
+  @media(max-width:978px){
+    .navbar-wrapper{
+      right: 25%;
+    }
+  }
+  @media(max-width:578px){
+    .navbar-wrapper{
+      width: 100%;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
